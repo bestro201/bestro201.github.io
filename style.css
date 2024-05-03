@@ -1,4 +1,4 @@
-/* body {
+/* /* body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
     color: #333;
@@ -54,3 +54,122 @@ body {
     background-color: #D0D3D4;
     display: inline-block;
 }
+ */
+/* /* body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+#location, #weather {
+    background-color: white;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+    */
+/* 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+#location, #weather {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #34495E;
+}
+
+.temperature, .weather-detail, .wind-speed, .area-code, .code {
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 4px;
+    background-color: #D0D3D4;
+    display: inline-block;
+} */ */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://source.unsplash.com/1600x900/?nature,water'); /* Фоновое изображение */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    backdrop-filter: blur(5px); 
+}
+
+#location, #weather {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #34495E;
+    text-shadow: 1px 1px 2px white; 
+    animation: fadeIn 2s; 
+}
+
+.temperature, .weather-detail, .wind-speed, .area-code, .code {
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 4px;
+    background-color: #D0D3D4;
+    display: inline-block;
+}
+
+/* анимашка */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* для мобилы */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    #location, #weather {
+        font-size: 16px;
+    }
+
+    .temperature, .weather-detail, .wind-speed, .area-code, .code {
+        font-size: 14px;
+    }
+}
+
